@@ -21,7 +21,7 @@ repository               : "ngaurav07/ngaurav07.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "assets/profile_image.jpeg"
+  avatar           : "profile_image.jpeg"
   name             : "Gaurav Neupane"
   pronouns         : # example: "she/her"  
   bio              : "Software Developer"
@@ -59,7 +59,7 @@ author:
   lastfm           : # Username
   linkedin         : "neupane-gaurav"
   mastodon         : # URL
-  medium           : # URL
+  medium           : "ngaurav456"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
