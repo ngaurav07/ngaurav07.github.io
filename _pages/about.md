@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Innovative Solutions in Backend, AI & Cloud | Gaurav Neupane"
+title: "Innovative Solutions in Backend, AI & Cloud"
 author_profile: true
 redirect_from: 
   - /about/
