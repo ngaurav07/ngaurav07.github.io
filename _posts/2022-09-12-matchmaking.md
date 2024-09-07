@@ -48,8 +48,8 @@ An Open Match can be installed through YAML as well as Helm.
 ### Step 2: Install Open Match
 We are going to install Open Match through YAML. We can customize the YAML file after downloading it, but we can start directly now.
 ```bash
-    kubectl apply --namespace open-match \
-    -f https://open-match.dev/install/v1.4.0-rc.1/yaml/01-open-match-core.yaml
+kubectl apply --namespace open-match \
+-f https://open-match.dev/install/v1.4.0-rc.1/yaml/01-open-match-core.yaml
 ```
 After successfully running the above code, let's see the Open Match pods.
 
