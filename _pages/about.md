@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Innovative Solutions in Backend, AI & Cloud"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
