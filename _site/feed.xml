@@ -1,25 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-06T18:10:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gaurav’s Homepage</title><subtitle>Software Developer | Backend | AI</subtitle><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><entry><title type="html">Future Blog Post</title><link href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Future Blog Post" /><published>2199-01-01T00:00:00-08:00</published><updated>2199-01-01T00:00:00-08:00</updated><id>http://localhost:4000/posts/2012/08/future-post</id><content type="html" xml:base="http://localhost:4000/posts/2012/08/blog-post-4/"><![CDATA[<p>This post will show up by default. To disable scheduling of future posts, edit <code class="language-plaintext highlighter-rouge">config.yml</code> and set <code class="language-plaintext highlighter-rouge">future: false</code>.</p>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This post will show up by default. To disable scheduling of future posts, edit config.yml and set future: false.]]></summary></entry><entry><title type="html">Blog Post number 4</title><link href="http://localhost:4000/posts/2012/08/blog-post-4/" rel="alternate" type="text/html" title="Blog Post number 4" /><published>2015-08-14T00:00:00-07:00</published><updated>2015-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2012/08/blog-post-4</id><content type="html" xml:base="http://localhost:4000/posts/2012/08/blog-post-4/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-06T20:25:10-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Gaurav’s Homepage</title><subtitle>Software Developer | Backend | AI</subtitle><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><entry><title type="html">Players Matchmaking Using Open Match, Agones and Minikube</title><link href="http://localhost:4000/posts/players-matchmaking-in-kubernetes/" rel="alternate" type="text/html" title="Players Matchmaking Using Open Match, Agones and Minikube" /><published>2023-01-02T00:00:00-08:00</published><updated>2023-01-02T00:00:00-08:00</updated><id>http://localhost:4000/posts/matchmaking</id><content type="html" xml:base="http://localhost:4000/posts/players-matchmaking-in-kubernetes/"><![CDATA[<p>Matchmaking is the process of connecting players together for online play sessions in multiplayer video games. Open Match is a framework that simplifies building players’ matchmakers, which runs on Kubernetes.</p>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<h3 id="a-story-about-matchmaking">A Story About Matchmaking</h3>
+<p>A few years ago, I played games and had a bad experience when I matched with players with higher or lower levels. When continuously matching with higher-level players, it was difficult for me to win the game. As well as, when matching with players of lower levels, it’s easy to win against them.</p>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<p>Both these cases led me to uninstall the game, and the sole reason behind this was my bad user experience.</p>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry><entry><title type="html">Blog Post number 3</title><link href="http://localhost:4000/posts/2014/08/blog-post-3/" rel="alternate" type="text/html" title="Blog Post number 3" /><published>2014-08-14T00:00:00-07:00</published><updated>2014-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2014/08/blog-post-3</id><content type="html" xml:base="http://localhost:4000/posts/2014/08/blog-post-3/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<h3 id="things-to-know-for-great-matchmaking">Things to Know for Great Matchmaking</h3>
+<ol>
+  <li>Players must be matched with the other players having a low difference in their XPS or levels.</li>
+  <li>For low latency, players residing in the same country or region must be matched, and the server must be as close as possible.</li>
+  <li>Players with the same coins and the same playing regions must be matched.</li>
+  <li>Players can make a private lobby or room as per their requirements.</li>
+  <li>In the case of a few players, the matchmaker can forget the above rules and match players. For example, if there are only two players where one player has XP 5 and another has XP 50, then they must be matched, keeping their XP information aside. This also applies to the coins and latency if the number of players is low.</li>
+  <li>In case of necessity, matchmaking must also create the game server and forward this information to the players.</li>
+  <li>It must efficiently distribute the players. For example, let’s assume there are 5 players, the maximum number of players is 4, and the minimum number of players is 2. Instead of distributing 4 people in one game server and making one extra player wait for others, matchmaking must distribute 3 players in one game server and 2 in another.</li>
+</ol>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<h3 id="about-open-match">About Open Match</h3>
+<p>Let’s discuss a little about the matchmaking framework open-sourced by Google.</p>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<p>This framework is written in go and runs in Kubernetes. Some features of the Open Match are as follows:</p>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry><entry><title type="html">Blog Post number 2</title><link href="http://localhost:4000/posts/2013/08/blog-post-2/" rel="alternate" type="text/html" title="Blog Post number 2" /><published>2013-08-14T00:00:00-07:00</published><updated>2013-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2013/08/blog-post-2</id><content type="html" xml:base="http://localhost:4000/posts/2013/08/blog-post-2/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<ol>
+  <li>Can scale up and down (horizontal scaling) as per the requirement being running in Kubernetes</li>
+  <li>Provides an API for accessing its endpoint – SwaggerUI for APIs</li>
+  <li>Has Backfill services for replacing the missing player with someone new</li>
+  <li>Uses Telemetry services like Grafana, Prometheus, Jaeger, and Stakdriver</li>
+  <li>Has TLS Encryption</li>
+  <li>Uses Redis as a database for saving tickets.</li>
+</ol>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<h3 id="open-match-installation-in-minikube">Open Match Installation in minikube</h3>
+<p>As an Open Match runs inside Kubernetes, you must install Kubernetes on your machine. Please refer to our other blog post, Kubernetes Deployments with Helm detailing it.</p>
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+<h3 id="step-1-set-up-a-minikube-cluster">Step 1: Set Up a minikube Cluster</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>minikube start <span class="nt">--cpus</span><span class="o">=</span>3 <span class="nt">--memory</span><span class="o">=</span>2500mb
+</code></pre></div></div>
+<p>An Open Match can be installed through YAML as well as Helm.</p>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry><entry><title type="html">Blog Post number 1</title><link href="http://localhost:4000/posts/2012/08/blog-post-1/" rel="alternate" type="text/html" title="Blog Post number 1" /><published>2012-08-14T00:00:00-07:00</published><updated>2012-08-14T00:00:00-07:00</updated><id>http://localhost:4000/posts/2012/08/blog-post-1</id><content type="html" xml:base="http://localhost:4000/posts/2012/08/blog-post-1/"><![CDATA[<p>This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.</p>
+<h3 id="step-2-install-open-match">Step 2: Install Open Match</h3>
+<p>We are going to install Open Match through YAML. We can customize the YAML file after downloading it, but we can start directly now.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply <span class="nt">--namespace</span> open-match <span class="se">\</span>
+<span class="nt">-f</span> https://open-match.dev/install/v1.4.0-rc.1/yaml/01-open-match-core.yaml
+</code></pre></div></div>
+<p>After successfully running the above code, let’s see the Open Match pods.</p>
 
-<h1 id="headings-are-cool">Headings are cool</h1>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> open-match
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Output:
 
-<h1 id="you-can-have-many-headings">You can have many headings</h1>
+NAME                                READY   STATUS              RESTARTS   AGE
+om-backend-76d8d76c96-fmhmn         0/1     ContainerCreating   0          3m53s
+om-frontend-57fc9f6b66-86hxj        0/1     ContainerCreating   0          3m53s
+om-query-799d8549d4-5qpgx           0/1     ContainerCreating   0          3m53s
+om-swaggerui-867d79b885-m9q6x       0/1     ContainerCreating   0          3m54s
+om-synchronizer-7f48f84dfd-j8swx    0/1     ContainerCreating   0          3m54s
+</code></pre></div></div>
+<blockquote>
+  <p><strong>Note:</strong> ✍️ Open Match needs to be customized to run as a Matchmaker. This custom configuration is provided to the Open Match components via a ConfigMap (om-configmap-override). Thus, starting the core service pods will remain in ContainerCreating until this config map is available.</p>
+</blockquote>
 
-<h2 id="arent-headings-cool">Aren’t headings cool?</h2>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="cool posts" /><category term="category1" /><category term="category2" /><summary type="html"><![CDATA[This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.]]></summary></entry></feed>
+<p>Run the command below to install the default evaluator in the Open Match namespace and configure Open Match to use it.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply <span class="nt">--namespace</span> open-match <span class="se">\</span>
+
+<span class="nt">-f</span> https://open-match.dev/install/v1.4.0-rc.1/yaml/06-open-match-override-configmap.yaml
+
+<span class="nt">-f</span> https://open-match.dev/install/v1.4.0-rc.1/yaml/07-open-match-default-evaluator.yaml
+</code></pre></div></div>
+<p>When Open Match is fully installed, the following output can be seen:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-n</span> open-match
+</code></pre></div></div>
+<p>The output must look like this:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME                                       READY   STATUS    RESTARTS   AGE
+open-match-backend-678dfb8464-bh9zp        1/1     Running   0          100m
+open-match-evaluator-6db6468d56-2ft24      1/1     Running   0          100m
+open-match-frontend-584c576f4b-shxvx       1/1     Running   0          100m
+open-match-query-66bcfbf744-6kxcx          1/1     Running   0          100m
+open-match-redis-node-0                    3/3     Running   0          100m
+open-match-redis-node-1                    3/3     Running   0          99m
+open-match-swaggerui-7476b64b94-68tbn      1/1     Running   0          100m
+open-match-synchronizer-5b8948dd46-5b4f6   1/1     Running   0          100m
+</code></pre></div></div>
+<p><em>Output after Open Match Installation</em>
+To successfully integrate Open Match in our games, we need to customize a few things or write the codes for these services. We can write the code in any language we wish by connecting to the GRPC or REST endpoints.</p>
+
+<h3 id="open-match-apis">Open Match APIS</h3>
+<p>We must access these hostnames and endpoints to create the matchmaker’s main logic.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swaggerui:
+hostName: om-swaggerui
+httpPort: 51500
+
+query:
+hostName: om-query
+grpcPort: 50503
+httpPort: 51503
+
+frontend:
+hostName: om-frontend
+grpcPort: 50504
+httpPort: 51504
+
+backend:
+hostName: om-backend
+grpcPort: 50505
+httpPort: 51505
+</code></pre></div></div>
+<h3 id="components-to-know">Components to Know</h3>
+<ul>
+  <li><strong>Ticket</strong>: A basic matchmaking entity in Open Match that represents a player (or group of players) requesting a match.</li>
+  <li><strong>Assignment</strong>: A mapping from a game server assignment to a Ticket.</li>
+  <li><strong>Match</strong>: A collection of tickets and the metadata of a match.</li>
+  <li><strong>Match Function(MMF)</strong>: The core matchmaking logic is implemented as a service invoked by Open Match to generate matches. It takes lists of tickets (which meet certain constraints) as input and returns any number of matches. The Match() function simply pairs any two players into a match for this basic demo.</li>
+  <li><strong>Director</strong>: A component that requests Open Match for matches and then sets assignments on the tickets in the matches found.</li>
+  <li><strong>Client</strong>: A service that translates in-queued players into tickets in Open Match understandable language; instructs Open Match that a player is currently looking for a match.</li>
+  <li><strong>Profile</strong>: Conditions denoting what type of players to match. For example, match players with a 5 XP difference.
+<img src="https://open-match.dev/site/images/demo-match-sequence.png" alt="Agones Flow chart" />
+              <em>Image used from Official Open Match site</em></li>
+</ul>
+
+<h3 id="flow-for-the-matchmaking">Flow for the Matchmaking</h3>
+<ol>
+  <li>Players connect to the frontend (client) and send their information like the XP, coin and region, then wait for the assignment.</li>
+  <li>The frontend creates the ticket and sends it to the Open Match’s frontend.</li>
+  <li>The Director creates the profiles and connects them to the Match() function.</li>
+  <li>The <strong>Match()</strong> function takes the profiles, also called pools, from the Director and extracts the tickets from the Open Match query. Loops in the given profile create the matches (keeping the players in the same array) and return the matches to the Director.</li>
+  <li>The Director gets the matches, creates an assignment, connects the Open Match backend and returns it to the Open Match backend. The Director also needs to create the game server, Agones. Inside the assignment, they send the players the game server information like IP and port.</li>
+  <li>Frontend fetches the assignment from the Open Match frontend and sends it back to the player.</li>
+</ol>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>In this blog, we learned about the importance of matchmaking in online games, using an open-source framework by Google, the installation of Open Match in Kubernetes, and the aspects of Open Match.</p>
+
+<p>In the upcoming post, we will learn about connecting Agones and Open Match for allocating game servers through Open Match. We will be using Open Match in cloud clusters like digital ocean, telemetry services provided by Open Match, and so on.</p>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="kubernetes" /><category term="golang" /><category term="agones" /><category term="architecture" /><summary type="html"><![CDATA[Matchmaking is the process of connecting players together for online play sessions in multiplayer video games. Open Match is a framework that simplifies building players’ matchmakers, which runs on Kubernetes.]]></summary></entry><entry><title type="html">Using Minio to Store Unstructured Data</title><link href="http://localhost:4000/posts/store-unstructred-data-using-minio/" rel="alternate" type="text/html" title="Using Minio to Store Unstructured Data" /><published>2023-01-02T00:00:00-08:00</published><updated>2023-01-02T00:00:00-08:00</updated><id>http://localhost:4000/posts/minio</id><content type="html" xml:base="http://localhost:4000/posts/store-unstructred-data-using-minio/"><![CDATA[<p>Minio is a well-known, open-source object storage server compatible with the Amazon S3 API. This makes it easy for developers to use Minio in their applications to store and retrieve data from S3-compatible storage services.</p>
+
+<h3 id="use-cases-of-minio">Use Cases of Minio</h3>
+<p>One common use case for Minio is as a data storage solution for applications that needs to store large amounts of data. For example, Minio can store user-generated content such as photos and videos for applications like social media platforms or online marketplaces.</p>
+
+<p>Another use case for Minio is a data storage solution for applications that store data in different locations or move their data between different storage services. For example, Minio can be used to store data in multiple cloud providers or to store data on-premises and in the cloud.</p>
+
+<p>Minio is also often used as a data storage solution for applications that need to ensure data security. It offers strong security features, such as server-side encryption and support for multiple authentication methods, making it a good choice for applications that need to protect sensitive data.</p>
+
+<h3 id="minio-scalability">Minio Scalability</h3>
+<p>One of the ways that Minio achieves scalability is through its distributed architecture. Minio is built on top of a distributed object storage system, which allows it to distribute data and requests across multiple nodes. This enables Minio to scale horizontally, enabling it to easily add more nodes to support more data and concurrent requests.</p>
+
+<p>Minio also achieves scalability through its use of erasure coding. Erasure coding is a data storage technique that allows Minio to store data more efficiently and with less redundancy. It can store more data on each node and support more concurrent requests.</p>
+
+<p>Besides, Minio offers various other features that help with scalability. Features include support for multi-tenancy, which allows multiple users or applications to share the same Minio instance, and support for cloud-native deployment models, such as containers and Kubernetes.</p>
+
+<p>Overall, Minio is a highly scalable object storage solution that can easily handle large amounts of data and support high levels of concurrency. This makes it a good choice for applications that store and manage large amounts of data.</p>
+
+<h3 id="installing-minio-using-docker">Installing Minio Using Docker</h3>
+<p>To install and run the Minio server in Docker, we will first need to install Docker on our system. Once Docker is installed, we can use the docker command to pull the Minio server image from the Docker Hub registry.</p>
+
+<p>Run the following command to pull the Minio server image from the Docker Hub in the console:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">mkdir</span> <span class="nt">-p</span> ~/minio/storage
+
+  docker run <span class="se">\</span>
+    <span class="nt">-p</span> 9000:9000 <span class="se">\</span>
+    <span class="nt">-p</span> 9090:9090 <span class="se">\</span>
+    <span class="nt">--name</span> miniostorage <span class="se">\</span>
+    <span class="nt">-e</span> <span class="s2">"MINIO_ROOT_USER=your-username"</span> <span class="se">\</span>
+    <span class="nt">-e</span> <span class="s2">"MINIO_ROOT_PASSWORD=your-password"</span> <span class="se">\</span>
+    <span class="nt">-v</span> ~/minio/storage:/storage <span class="se">\</span>
+    quay.io/minio/minio server /data <span class="nt">--console-address</span> <span class="s2">":9090"</span>
+</code></pre></div></div>
+<p>This will download the latest Minio server image from the Docker Hub, save it to your local Docker image repository and run it in the background.</p>
+
+<h3 id="generating-access-and-secret-keys-for-minio">Generating Access and Secret Keys for Minio</h3>
+<p>To generate access and secret keys for Minio, you can use the minio command-line tool or the dashboard using the username and password we passed as environment variables inside the Docker of the Minio server.</p>
+
+<p>Firstly, log in to the Minio server using the credentials we configured while installing the Minio server.<br />
+<img src="https://blog.yarsalabs.com/content/images/2022/12/Screen-Shot-2022-12-07-at-14.25.04.png" alt="Minio image" /><br />
+Secondly, after logging in, the dashboard will pop up. For now, we want to connect the client to the Minio server. So let’s create access keys.
+<img src="https://blog.yarsalabs.com/content/images/size/w1000/2022/12/Screen-Shot-2022-12-07-at-13.43.39-min-1-.png" alt="minio access keys" /></p>
+
+<p>This code will generate new access and secret keys and save them for authentication. Those access and secret keys can be used to authenticate with the Minio server.</p>
+
+<h3 id="connecting-the-client-to-the-minio-server">Connecting the Client to the Minio Server</h3>
+<p>To use Minio in Node.js, you first need to install the Minio package from npm. To install the Minio package, run the following command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">$ </span>npm <span class="nb">install </span>minio
+</code></pre></div></div>
+
+<h3 id="performing-operations-using-minio-package">Performing Operations using Minio Package</h3>
+<p>Here is an example of how you might use the minio package to perform various operations on a Minio server in Node.js:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  const Minio <span class="o">=</span> require<span class="o">(</span><span class="s1">'minio'</span><span class="o">)</span>
+
+  const client <span class="o">=</span> new Minio.Client<span class="o">({</span>
+    endPoint: <span class="s1">'your-endpoint'</span>,
+    accessKey: <span class="s1">'your-access-key'</span>,
+    secretKey: <span class="s1">'your-secret-key'</span>
+  <span class="o">})</span>
+</code></pre></div></div>
+<h3 id="create-a-bucket">Create a Bucket</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Create a new bucket
+  client.makeBucket<span class="o">(</span><span class="s1">'my-bucket'</span>, <span class="s1">'us-east-1'</span>, <span class="o">(</span>err<span class="o">)</span> <span class="o">=&gt;</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span>err<span class="o">)</span> throw err<span class="p">;</span>
+    console.log<span class="o">(</span><span class="s1">'Bucket created successfully'</span><span class="o">)</span><span class="p">;</span>
+  <span class="o">})</span>
+</code></pre></div></div>
+<h3 id="list-all-buckets">List All Buckets</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // List all buckets
+  client.listBuckets<span class="o">((</span>err, buckets<span class="o">)</span> <span class="o">=&gt;</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span>err<span class="o">)</span> throw err<span class="p">;</span>
+    console.log<span class="o">(</span><span class="s1">'Buckets:'</span>, buckets<span class="o">)</span><span class="p">;</span>
+  <span class="o">})</span>
+</code></pre></div></div>
+<h3 id="upload-an-object-to-a-bucket">Upload an Object to a Bucket</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Upload an object
+  const object <span class="o">=</span> <span class="s1">'hello-world.txt'</span><span class="p">;</span>
+  const data <span class="o">=</span> Buffer.from<span class="o">(</span><span class="s1">'Hello, world!'</span><span class="o">)</span><span class="p">;</span>
+  client.putObject<span class="o">(</span><span class="s1">'my-bucket'</span>, object, data, <span class="o">(</span>err, etag<span class="o">)</span> <span class="o">=&gt;</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span>err<span class="o">)</span> throw err<span class="p">;</span>
+    console.log<span class="o">(</span><span class="sb">`</span>Object <span class="s2">"</span><span class="k">${</span><span class="nv">object</span><span class="k">}</span><span class="s2">"</span> uploaded successfully. ETag: <span class="k">${</span><span class="nv">etag</span><span class="k">}</span><span class="sb">`</span><span class="o">)</span><span class="p">;</span>
+  <span class="o">})</span>
+</code></pre></div></div>
+<h3 id="download-an-object">Download an Object</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  client.getObject<span class="o">(</span>bucketName, object, <span class="o">(</span>err, data<span class="o">)</span> <span class="o">=&gt;</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span>err<span class="o">)</span> throw err<span class="p">;</span>
+    console.log<span class="o">(</span><span class="sb">`</span>Object <span class="s2">"</span><span class="k">${</span><span class="nv">object</span><span class="k">}</span><span class="s2">"</span> downloaded successfully. Data: <span class="k">${</span><span class="nv">data</span><span class="k">}</span><span class="sb">`</span><span class="o">)</span><span class="p">;</span>
+  <span class="o">})</span>
+</code></pre></div></div>
+<h3 id="delete-an-object">Delete an Object</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Delete an object
+  client.removeObject<span class="o">(</span><span class="s1">'my-bucket'</span>, object, <span class="o">(</span>err<span class="o">)</span> <span class="o">=&gt;</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span>err<span class="o">)</span> throw err<span class="p">;</span>
+    console.log<span class="o">(</span><span class="sb">`</span>Object <span class="s2">"</span><span class="k">${</span><span class="nv">object</span><span class="k">}</span><span class="s2">"</span> deleted successfully<span class="sb">`</span><span class="o">)</span><span class="p">;</span>
+  <span class="o">})</span>
+</code></pre></div></div>
+<p>In this example, we used the minio package to create a new Minio client and connect to a Minio server. We then use the client to perform various operations on the server, such as creating a bucket, listing all buckets, uploading and downloading an object, and deleting an object.</p>
+
+<h3 id="in-conclusion">In Conclusion,</h3>
+<p>Minio is a powerful and versatile object storage solution compatible with the Amazon S3 API. It is easy to use and customize and offers high scalability and reliability.</p>
+
+<p>Minio is often used in Docker environments, as it can be easily deployed and run in a Docker container. It is also easy to integrate with other technologies and frameworks, such as NestJS and other languages like Go, Python, etc.</p>
+
+<p>Minio offers various features and tools that make it a good choice for applications that store and manage large amounts of data. These include support for multi-tenancy, erasure coding, and cloud-native deployment models.</p>
+
+<p>Overall, Minio is a valuable tool for developers and organizations that need a scalable, reliable, and easy-to-use object storage solution.</p>]]></content><author><name>Gaurav Neupane</name><email>ngaurav456@gmail.com</email></author><category term="minio" /><category term="docker" /><category term="nodejs" /><category term="architecture" /><summary type="html"><![CDATA[Minio is a well-known, open-source object storage server compatible with the Amazon S3 API. This makes it easy for developers to use Minio in their applications to store and retrieve data from S3-compatible storage services.]]></summary></entry></feed>
