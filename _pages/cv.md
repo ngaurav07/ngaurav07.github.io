@@ -16,41 +16,44 @@ Euless,TX [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&
 
 ## Summary
 
-Software Developer with over 5 years of experience in cloud computing, backend and artificial intelligence. Highly skilled in  Python, AWS, SQL as well as MongoDB with a strong track record of optimizing performance and delivering robust software solutions in the Trading, FinTech, and AI industries. Expertise in agile methodologies and adept at transforming complex requirements into practical solutions. Recognized for excellent communication and teamwork skills, excelling in fast-paced, collaborative environments.
+Software Developer with over 5 years of experience in cloud computing, backend and artificial intelligence. Highly skilled in  Java, Spring Boot,  AWS, Python, SQL as well as MongoDB with a strong track record of optimizing performance and delivering robust software solutions in the Trading, FinTech, and AI industries. Expertise in agile methodologies and adept at transforming complex requirements into practical solutions. Recognized for excellent communication and teamwork skills, excelling in fast-paced, collaborative environments.
 
 ## Experience
 
 **Yarsa Labs | Pokhara, Nepal** 
 *Back-End Engineer 2022- 2023*
 
-- Implemented a robust backend system for real-time gameplay features using a combination of NodeJS, Docker, and Kubernetes, supporting over 100 million downloads and ensuring high availability and reliability.
-- Collaborated on developing a B2B e-commerce application with Java, Python, FastAPI, AWS, PostgreSQL, Minio, Keycloak, Docker, and Apache Solr, achieving 100% test coverage to ensure robust performance while enhancing search capabilities and user authentication.
-- Developed a background removal AI application with Python, AWS, OpenCV, CNN, TensorFlow, and Docker, improving security and reducing costs by removing reliance on third-party services and enhancing deployment consistency.
-- Engineered a scalable, reliable matchmaking system for a real-time gaming app with Golang, Kubernetes, and gRPC, cutting deployment times by 20% and ensuring seamless gameplay for millions.
-- Optimized API search functionalities within the B2B application using Apache Solr and Java resulting in a 15% reduction in search latency and improving the overall user experience.
-- Enhanced real-time gaming backend systems by implementing MongoDB aggregation pipelines to resolve race conditions and using Redis for efficient data caching, reducing latency by 10% and improving gameplay performance.
+- Implemented a robust backend system for gameplay features using a combination of Java, Spring Boot,  AWS, Docker, MongoDB, Bloom filters and Redis supporting over 100 million downloads and ensuring high availability and reliability.
+- Collaborated on developing a B2B e-commerce application with Java, Spring Boot, PostgreSQL, AWS, Docker, and Apache Solr, achieving 100% test coverage to ensure robust performance while enhancing search capabilities and user authentication.
+- Developed a background removal AI application with Python, OpenCV, CNN, TensorFlow and Docker for internal use improving security and reducing costs by removing reliance on third-party services and enhancing deployment consistency.
+- Enhanced real-time gaming backend systems by implementing MongoDB aggregation pipelines to resolve race conditions and used Redis for efficient data caching, reducing latency by 10% and improving gameplay performance.
+- Engineered a scalable, reliable matchmaking system for a real-time gaming app with Java, Spring Boot, Kubernetes, and gRPC, cutting deployment times by 20% and ensuring seamless gameplay for millions.
+- Optimized API search functionalities within the B2B application using Apache Solr, resulting in a 15% reduction in search latency and improving the overall user experience.
+
 
 
 
 **Bottle Technology | Kathmandu, Nepal**  
-*Back-End Engineer 2021 - 2022*
+*Associate Back-End Engineer 2021 - 2022*
 
-- Integrated over 100 APIs for back-office applications and websites using Python, FastAPI, Redis, and PostgreSQL, leveraging AWS services to enhance scalability and performance in real-time processing.
-- Developed and deployed an OCR and signature extraction system for a Fintech application using Python, OpenCV, TensorFlow, and Keras, improving accessibility for users and increasing sales by 30%.
-- Built an online trading application in Nepal by leveraging AWS, Docker, and PostgreSQL, enhancing scalability and reliability, and achieving a 50% improvement in system uptime.
+- Built an online trading application in Nepal by leveraging Java, Spring Boot, AWS, Docker, PostgreSQL and MongoDB enhancing scalability and reliability, and achieving a 50% improvement in system uptime.
+- Integrated over 100 APIs for back-office applications and websites using Java, Spring Boot, FastAPI, Redis, MongoDB and PostgreSQL, leveraging AWS services to enhance scalability and performance in real-time processing.
 - Built a web scraping application to extract information from various government sites using Python, Selenium, and BeautifulSoup, automating data collection and improving operational efficiency.
 - Deployed multiple machine learning models using Docker, AWS EC2, and FastAPI, streamlining deployment processes and ensuring consistent environment management.
+- Collaborated on the creation of OCR and signature extraction system for a Fintech application using Python, OpenCV, TensorFlow, and Keras, improving accessibility for users and increasing sales by 30%. 
+
 
 
 
 **Inspiring Lab | Kathmandu, Nepal**  
-*Software Engineer (AI) 2019 - 2021*
+*AI Software Developer 2019 - 2021*
 
+- Designed and implemented a data pipeline(ETL) for automatically creating, training, and updating machine learning models in production using AWS, Python and FastAPI, enhancing data flow efficiency and increasing real-time model update capabilities with new data.
+- Designed and developed an NLP-powered chatbot for customer support.
 - Developed a backend system for a vehicle detection model using Python, FastAPI, AWS, WebSocket, OpenCV, ONNX, Docker, Redis, and PostgreSQL, ensuring robust and scalable performance.
 - Deployed an enhanced computer vision-based object detection and tracking model for a vehicle surveillance system, leveraging TensorFlow and OpenCV, and enhancing accuracy by 5%.
-- Optimized and deployed a machine learning model for automated live pollen and mold count at Pollen Sense using TensorFlow, improving accuracy by 3% and reducing latency by 10%.
-- Designed a pipeline for automatically creating, training, and updating machine learning models in production using Python and FastAPI, enhancing data flow efficiency and increasing real-time model update capabilities with new data.
-- Leveraged Docker to streamline the deployment of machine learning and backend systems in a production environment, ensuring consistency and improving operational efficiency.
+- Optimized and deployed a machine-learning model for automated live pollen and mold count at Pollen Sense using TensorFlow, improving accuracy by 3% and reducing latency by 10%.
+
 
 
 **Yarsa Labs | Pokhara, Nepal**  
@@ -62,12 +65,12 @@ Software Developer with over 5 years of experience in cloud computing, backend a
 
 ## Skills
 
-**Languages:** Python, Java , Typescript
-**Databases:** PostgreSQL, ChromaDB, MongoDB, Redis  
+**Languages:** Java, Python
+**Databases:** PostgreSQL, MongoDB, Redis, ChromaDB  
 **AI:** Computer Vision, TensorFlow, LangChain, Hugging Face, LlamaIndex, Scikit-learn, NumPy, Pandas, Matplotlib  
-**Tools:** AWS, Git, Docker, Kubernetes, Selenium, BeautifulSoup, Keycloak, Minio, CI/CD , Jenkins
+**Tools:** AWS, Git, Docker, Kubernetes, Maven, Prometheus, Grafana, OOP, Tensorflow, Keras, OpenCV, Keycloak, Minio, CI/CD , Jenkins
 **Architecture:** REST API, Neural Networks  
-**Back-End:** FastAPI, Spring Boot, NestJS
+**Back-End:** Spring Boot, FastAPI, 
 **Search Engines:** Apache Solr
 
 ## Education
