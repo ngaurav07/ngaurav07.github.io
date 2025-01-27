@@ -95,7 +95,7 @@ Software Engineer with a strong background in backend development, cloud computi
 <p>
   <strong>Yarsa Labs | Pokhara, Nepal</strong>
   <span style="display: inline-block; width: 50%; text-align: center;">Junior Software Developer(Backend Focus) - Contract</span>
-  <span style="float: right;">2017-2011</span>
+  <span style="float: right;">2017-2017</span>
 </p>
 
 ### Game Servers Backend
